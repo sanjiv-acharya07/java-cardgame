@@ -1,28 +1,11 @@
 # JAVA Cardgame
-## Instructions
-The Java package can be run on a Java compiler. The user will use the formatted input file to create and run a card game.
-## Classes
+### Part 1
+Part 1 allows users to play and keep score of a custom card game. This part will be ran within the Part1Main class. To run this part, you must add your input file into the "part1/inputs/" directory, and must add the name of your input file in the last part of line 15. To see the output, add the name of your output file into line 13.
+The input of Part 1 will contain the instruction (either ADD, DELETE, or PLAY) and the solve method will use the other classes to either add a player, delete a player, or play the game. Once the program is complete, the output will be a list of each player and their scores.
 
-### 1. BTNode
-### Basic Methods
-The BTNode class defines binary tree nodes. Each node has the following attributes:
-  player
-  left
-  right
-The BTNode class contains a constructor, getter, and setter methods corresponding to these attributes.
+### Part 2
+Part 2 allows users to encrypt a player's data using their name and a binary tree. This part will be ran within the Part2Main class. To run this part, you must add your input file into the "part2/inputs/" directory, and must add the name of your input file in the last part of line 14. To see the output, add the name of your output file into line 12.
+The input of Part 2 will contain names of players and their scores, number of times, and the instructions for the binary tree traversal. First, the method will add the players into a binary tree using the player names and number of times. Next, the method will use the directions to see if there is a player stored at that node. If there is not, then the output will be -1, but if there is the output will be the player and their score.
 
-### 2. BinaryTree
-### Basic Methods
-The BinaryTree class defines a binary tree. Each tree object has the following attributes:
-  root
-The BinaryTree class contains a constructor, getter methods, and setter methods corresponding to these attributes.
-### Functionalities
-1. insert
-- void
-- parameters: Player p
-The insert method is used to insert a player into the binary tree object. If the tree is empty the player becomes the root, but if not the recursiveInsert method is used.
-
-2. recursiveInsert
- - void
- - parameters: Player player, String playerName
-The recursiveInsert method is used to recursively insert a player into the 
+### Running
+If you would like to run this code, the input file must match the format of the sample input files for both part 1 and 2. Feel free to have fun with the different names and games!
